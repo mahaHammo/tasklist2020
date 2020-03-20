@@ -9,6 +9,7 @@
         <body>
         @foreach($tasks as $task)
         <h3>{{$task->name}}</h3>
+        <h3>{{$task->id}}</h3>
         @endforeach
     
     </body>
