@@ -9,19 +9,10 @@
     <ul>
     @foreach($tasks as $task)
         <li><a href="/task/{{$task->id}}">{{$task->name}}</a> </li>
-    
+        
         @endforeach
-    
+
     </ul>
 
 </body>
 </html>
-<?php 
-Route::get('/',function(){
-    return view('welcome');
-});
-Route::get('tasks',function(){
-    $tasks = DB::table('tasks')->get();
-    //return $tasks;
-    return view('index', compact('tasks'));
-});
