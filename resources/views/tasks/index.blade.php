@@ -53,9 +53,20 @@
 
                                         <!-- Task Delete Button -->
                                         <td>
-                                            <form action="#" method="POST">
+                                            <form action="delete/{{task->id}}" method="POST">
+                                                @csrf
+                                                @method('DELETE')
                                                 <button type="submit" class="btn btn-danger">
                                                     <i class="fa fa-btn fa-trash"></i>Delete
+                                                </button>
+                                            </form>
+                                        </td>
+                                        <!-- Task UpDate Button -->
+                                        <td>
+                                            <form action="update/{{task->id}}" method="POST">
+                                                @csrf
+                                                <button type="submit" class="btn btn-danger">
+                                                    <i class="fa fa-btn fa-trash"></i>Update
                                                 </button>
                                             </form>
                                         </td>
