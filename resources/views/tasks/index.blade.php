@@ -61,12 +61,12 @@
                                                 </button>
                                             </form>
                                         </td>
-                                        <!-- Task UpDate Button -->
+                                        <!-- Task update Button -->
                                         <td>
-                                            <form action="update/{{task->id}}" method="POST">
+                                            <form action="edit/{{task->id}}" method="POST">
                                                 @csrf
                                                 <button type="submit" class="btn btn-danger">
-                                                    <i class="fa fa-btn fa-trash"></i>Update
+                                                    <i class="fa fa-btn fa-trash"></i>Edit
                                                 </button>
                                             </form>
                                         </td>
