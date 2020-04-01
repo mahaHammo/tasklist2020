@@ -5,7 +5,7 @@
 <div class="col-sm-offset-2 col-sm-8">
     <div class="panel panel-default">
         <div class="panel-heading">
-            New Task
+            Update_tas
         </div>
 
         <div class="panel-body">
@@ -24,8 +24,8 @@
                 <!-- Update Task Button -->
                 <div class="form-group">
                     <div class="col-sm-offset-3 col-sm-6">
-                        <button type="submit" class="btn btn-default">
-                            <i class="fa fa-pencil fa-fw"></i> Update Task
+                        <button type="submit" class="btn btn-success">
+                            <i class="fa-li fa fa-check-square"></i> Update Task
                         </button>
                     </div>
                 </div>
@@ -71,7 +71,7 @@
                                 <form action="{{url('edit/'.$task->id)}}" method="POST">
                                          @csrf
                                         <button type="submit" class="btn btn-success">
-                                             <i class="fa fa-pencil fa-fw"></i> Edit
+                                             <i class="fa-li fa fa-check-square"></i>Edit
                                         </button>
                                   </form>
                                   

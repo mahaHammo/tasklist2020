@@ -42,7 +42,10 @@ class TaskController extends Controller
 
     public function Update(Request $request,$id){ 
 
-        DB::table('tasks')->where('id', $id)->update(['name' => $request->name, 'created_at' => now(),'updated_at' =>now()]);
+        DB::table('tasks')->where('id', $id)->update(['name' => $request->name,
+         'created_at' => now(),
+         'updated_at' =>now()
+         ]);
         return redirect('/'); 
 
     }
